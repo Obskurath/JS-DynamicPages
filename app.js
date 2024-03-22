@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-let playSonido = (teclaSonido) => {
-document.getElementById(teclaSonido).play();
-=======
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
 let playSonido = (tecla) => {
@@ -19,9 +15,7 @@ for(let counter = 0; counter < listaDeTeclas.length ; counter++) {
     tecla.onclick = function () {
         playSonido(idAudio);
     };
->>>>>>> trabajando-js
 }
 
-const listaDeTeclas = document.querySelectorAll('.tecla')
 
 // document.querySelector('.tecla_pom').onclick = playSonido;
