@@ -1,3 +1,3 @@
-document.querySelector('.tecla_pom')
-
-document.getElementById('sonido_tecla_pom').play();
+let playSonido = (tecla) => {
+document.getElementById(tecla).play();
+}
