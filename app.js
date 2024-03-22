@@ -10,9 +10,20 @@ for(let counter = 0; counter < listaDeTeclas.length ; counter++) {
 
     const idAudio = `#sonido_${instrumento}`;
     console.log(idAudio)
-    console.log(counter)
 
     tecla.onclick = function () {
         playSonido(idAudio);
     };
+    tecla.onkeydown = function (e) {
+        if ( e.code === 'Space' ||  e.code === 'Enter') {
+            tecla.classList.add('activa');
+        }
+        console.log(e)
+    }
+
+
+    tecla.onkeyup = function () {
+        tecla.classList.remove('activa');
+    }
+    
 }
